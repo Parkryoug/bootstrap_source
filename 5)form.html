@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Form bootstrap 활용</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- http://bootstrapk.com/css/#forms -->
+    <form>
+        <ul>
+            <li class="form-inline">
+                <label for="id">아이디 :</label>
+                <input type="text" name="id" id="id" class="form-control">
+                <label for="pw">비밀번호 :</label>
+                <input type="password" name="pw" id="pw" class="form-control">
+            </li>
+            <br><br>
+            <li class="form-inline">
+                <label for="birth">생년원일</label>
+                <div id="birth">
+                    
+                    <select name="year" id="year" class="form-control">
+                        <option value="년도">년도</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                    </select>
+                    <br><br>
+                    <select name="month" id="month" class="form-control">
+                        <option value="월">월</option>
+                        <option value="1월">1월</option>
+                        <option value="2월">2월</option>
+                        <option value="3월">3월</option>
+                        <option value="4월">4월</option>
+                    </select>
+                    <br><br>
+                    <select name="day" id="day" class="form-control">
+                        <option value="일">일</option>
+                        <option value="1일">1</option>
+                        <option value="2일">2</option>
+                        <option value="3일">3</option>
+                        <option value="4일">4</option>
+                    </select>
+                </div>
+            </li>
+            <br>
+            <li class="checkbox" id="agree">
+                <input type="checkbox" name="checkbox" id="agree">
+                <label for="agree">약관에 동의하시겠습니까?</label>
+            </li>
+        </ul>
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+          </label>
+          
+          <!-- 라디오는한번에 자기가 name그룹인걸 인식해야 하나의 radio를 체크한다 -->
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+          </label>
+    </form>
+</body>
+</html>

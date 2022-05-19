@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Fullscreen Vagas</title>
+    <link rel="stylesheet" href="css/mybootstrap.css">
+    <link rel="stylesheet" href="css/vegas.min.css">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/vegas.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#wrapper').vegas({
+                slides:[
+                    {src:'images/people.jpg'},
+                    {src:'images/people-2.jpg'},
+                    {src:'images/people-3.jpg'},
+                    {src:'images/water.jpg',
+                        video: {
+                            src: ['videos/stream.mp4'],
+                            loop: true,
+                            mute: true
+                        }
+                    }
+                ]
+            })
+        });
+    </script>
+</head>
+<body>
+    <!-- vegas 사용시 jQuery, vegas.css, vegas.js 가 필요하다 -->
+    <div id="wrapper">
+        <div id="content">
+            <h1>FullScreen Background Image</h1>
+            <p>
+                <strong><a href="http://vegas.jaysalvat.com">Vegas.js</a></strong>
+                플러그인을 이용한 <br> 풀스크린 배경 이미지!
+            </p>
+            <br><br><br>
+        </div>
+    </div>
+</body>
+</html>
